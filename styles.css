@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    border: 0;
+    
+    overflow-x: hidden;
+    font-family: "Comfortaa";
+    font-weight: 700;
+  }
+header{
+  margin-top: 0;
+    padding-top: 0;
+    background-color: black;
+    height: 50px;
+    width: 100vw;
+    position: absolute;
+}  
+.banner{
+  padding-top: 50px;
+  height: 500px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: rgb(135, 40, 224);
+  width: 1080px;
+
+}
