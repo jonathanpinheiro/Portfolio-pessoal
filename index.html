@@ -1,31 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="img/jp favicon.png" type="image/x-icon" />
-    <title>Sobre mim</title>
-</head>
-<header>
-    <div class="Nav-bar">
-        <a href="'página inicial'"> <img src="img/jp favicon.png"></a>
-        <a href="http://" target="_blank">Portfolio</a>
-        <a href="contatos">Contatos</a>
-        <a></a>
 
-    </div>
-    
-</header>
-<div class="banner">
+    <title>Jonathan Pinheiro</title>
+  </head>
 
-</div>
-<div></div>
-<body>
-    
-</body>
-</html>
+  <body>
+    <header>
+      <nav class="navigationBar" id="navBar">
+        <a href="#Start"><img class="logo" src="img/jp favicon.png" /></a>
+
+        <div class="navList">
+          <a href="#Start" class="navItem">Início</a>
+          <a href="#About" class="navItem">Sobre mim</a>
+          <a href="#Projects" class="navItem">Projetos</a>
+          <a href="#Social" class="navItem">Contato</a>
+        </div>
+
+        <div>
+          <div class="mobileMenu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script src="header.js"></script>
+
+    <section class="homeSection" id="Start">
+      <div class="helloWorld">
+        <h1>< Olá mundo! /></h1>
+        <h2 style="color: #a1b0b3">Meu nome é Jonathan Pinheiro.</h2>
+        <h3>Designer | Desenvolvedor frontend</h3>
+      </div>
+
+      <div class="homeLink">
+        <a
+          class="btn"
+          target="blank"
+          href="https://www.linkedin.com/in/jonathan-pinheiro-97687a16a"
+          >LinkedIn</a
+        >
+
+        <a class="btn" target="blank" href="https://github.com/jonathanpinheiro"
+          >GitHub</a
+        >
+      </div>
+    </section>
+    <section class="Sobre" id="About">
+      <div class="Apresentação">
+        <h1>Sobre mim</h1>
+        <p>
+          Tenho 21 anos, estou formado em Análise e desenvolvimento de sistemas
+          pela Unifael. Por volta dos meus 15 anos atuo como designer
+          freelancer. Atualmente estou me aventurando no mundo do
+          desenvolvimento Web.
+        </p>
+        <h1>Áreas de interesse</h1>
+        <ul>
+          <li>Web design</li>
+          <li>UX design</li>
+          <li>Landing pages</li>
+          <li>Interfaces</li>
+        </ul>
+      </div>
+      <div class="Experiência"></div>
+    </section>
+
+    <section class="Projetos" id="Projects"></section>
+
+    <section class="Contato" id="Social"></section>
+  </body>
+  <!--  
+  <footer>
+    <p>Desenvolvido por Jonathan Pinheiro</p>
+  </footer>
+--></html>

@@ -1,27 +1,169 @@
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap);
 * {
-    padding: 0;
-    border: 0;
-    
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-family: "Comfortaa";
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+li,
+button {
+  color: #ffffff;
+}
+a {
+  margin-left: 30px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+a.logo img {
+  cursor: pointer;
+}
+.navigationBar {
+  background-color: #1b1b1b;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  justify-content: space-around;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.navList {
+  list-style: none;
+  display: flex;
+}
+.mobileMenu {
+  cursor: pointer;
+  display: none;
+}
+
+.navigationBar a {
+  float: left;
+  display: block;
+  text-align: center;
+
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navigationBar a:hover {
+  opacity: 0.5;
+}
+
+.mobileMenu div {
+  width: 22px;
+  height: 3px;
+  background: #fff;
+  margin: 6px;
+  border-radius: 2px;
+}
+
+@media (max-width: 999px) {
+  body {
     overflow-x: hidden;
-    font-family: "Comfortaa";
-    font-weight: 700;
   }
-header{
-  margin-top: 0;
-    padding-top: 0;
-    background-color: black;
-    height: 50px;
-    width: 100vw;
+  .navList {
     position: absolute;
-}  
-.banner{
-  padding-top: 50px;
-  height: 500px;
-  margin-top: 50px;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 20vh;
+    background: #1b1b1b;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .navList a {
+    margin-left: 30px;
+  }
+  .mobileMenu {
+    display: block;
+  }
+}
+
+.navList.active {
+  transform: translateX(0);
+  padding-top: 70px;
+  height: 20vh;
+  width: 50vw;
+  display: flex;
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.mobileMenu.active .line1 {
+  transform: rotate(-45deg) translate(-3px, 8px);
+}
+
+.mobileMenu.active .line2 {
+  opacity: 0;
+}
+
+.mobileMenu.active .line3 {
+  transform: rotate(45deg) translate(-3px, -8px);
+}
+body {
+  background-color: #12121b;
+  overflow-x: hidden;
+}
+.homeSection {
+  padding: 100px;
+}
+.homeLink {
+  display: flex;
+}
+.btn {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1b1b;
+  border-radius: 15px;
+  height: 40px;
+  width: 150px;
+  margin: 10px;
+}
+.homeSection {
+  height: 100vh;
+  width: 100vw;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  background-color: rgb(135, 40, 224);
-  width: 1080px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  background-color: #12121b;
+}
 
+footer {
+  padding-bottom: 0;
+  height: 70px;
+  align-items: center;
+  position: relative;
+  background-color: #1b1b1b;
 }
