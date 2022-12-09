@@ -6,6 +6,23 @@
   font-family: "Comfortaa";
   font-weight: 700;
 }
+h1 {
+  margin-top: 50px;
+}
+p {
+  margin-top: 20px;
+  text-indent: 50px;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+h1,
+h2,
+h3,
+p,
+a,
+li {
+  cursor: default;
+}
 
 h1,
 h2,
@@ -18,15 +35,30 @@ button {
 }
 a {
   margin-left: 30px;
-  transition: 0.3s;
+  transition: 0.7s;
   text-decoration: none;
 }
-
+li {
+  list-style: none;
+  text-indent: 50px;
+  margin-top: 15px;
+}
+details {
+  padding-top: 30px;
+  padding-left: 50px;
+  color: #33bfd0;
+  cursor: pointer;
+}
+span {
+  color: #33bfd0;
+  cursor: progress;
+}
 a:hover {
   opacity: 0.7;
 }
-a.logo img {
+a.logo {
   cursor: pointer;
+  color: #33bfd0;
 }
 .navigationBar {
   background-color: #1b1b1b;
@@ -128,6 +160,8 @@ header {
 body {
   background-color: #12121b;
   overflow-x: hidden;
+  justify-content: center;
+  justify-items: center;
 }
 .homeSection {
   padding: 100px;
@@ -147,8 +181,10 @@ body {
   width: 150px;
   margin: 10px;
 }
+.btn:hover {
+  transform: scale(1.09);
+}
 .homeSection {
-  height: 100vh;
   width: 100vw;
   display: block;
   margin-left: auto;
@@ -158,6 +194,13 @@ body {
   align-items: center;
   padding-top: 150px;
   background-color: #12121b;
+}
+
+section {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
 }
 
 footer {
