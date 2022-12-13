@@ -5,6 +5,7 @@
   margin: 0;
   font-family: "Comfortaa";
   font-weight: 700;
+  zoom: normal;
 }
 h1 {
   margin-top: 50px;
@@ -185,7 +186,6 @@ body {
   transform: scale(1.09);
 }
 .homeSection {
-  width: 100vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -193,11 +193,11 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 150px;
-  background-color: #12121b;
 }
-
 section {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   width: 70vw;
@@ -205,8 +205,51 @@ section {
 
 footer {
   padding-bottom: 0;
-  height: 70px;
+  height: 170px;
   align-items: center;
   position: relative;
   background-color: #1b1b1b;
+}
+footer p {
+  padding-top: 70px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.projects {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.projectImage {
+  margin: 15px;
+  height: 130px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #33bfd0;
+}
+
+.socialbtn {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: #1b1b1b;
+  border-radius: 15px;
+  height: 40px;
+  width: 250px;
+  margin: 10px;
+}
+.socialbtn:hover {
+  transform: scale(1.09);
+}
+.socialLogo {
+  height: 25px;
+  margin-left: 30px;
 }
