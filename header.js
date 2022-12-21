@@ -11,8 +11,8 @@ class MobileNavbar {
     this.navItem.forEach((link, index) => {
       link.style.animation
         ? (link.style.animation = "")
-        : (link.style.animation = `navLinkFade 0.2s ease forwards ${
-            index / 7 + 0.3
+        : (link.style.animation = `navLinkFade 0.9s ease forwards ${
+            index / 10 + 0.3
           }s`);
     });
   }

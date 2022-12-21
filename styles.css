@@ -5,7 +5,11 @@
   margin: 0;
   font-family: "Comfortaa";
   font-weight: 700;
-  zoom: normal;
+}
+body,
+html,
+footer {
+  overflow-x: hidden !important;
 }
 h1 {
   margin-top: 50px;
@@ -24,7 +28,31 @@ a,
 li {
   cursor: default;
 }
-
+.meuNome {
+  color: #33bfd0;
+}
+.LogoJP {
+  animation: Color 2s infinite;
+  font-size: 70px;
+  display: flex;
+}
+@keyframes Color {
+  0% {
+    color: #7bdafc;
+  }
+  25% {
+    color: #ffffff;
+  }
+  50% {
+    color: #33bfd0;
+  }
+  75% {
+    color: #33bfd0;
+  }
+  100% {
+    color: #33bfd0;
+  }
+}
 h1,
 h2,
 h3,
@@ -50,16 +78,15 @@ details {
   color: #33bfd0;
   cursor: pointer;
 }
-span {
-  color: #33bfd0;
-  cursor: progress;
-}
 a:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 a.logo {
   cursor: pointer;
   color: #33bfd0;
+}
+.logo:hover {
+  color: #ffffff;
 }
 .navigationBar {
   background-color: #1b1b1b;
@@ -104,10 +131,11 @@ header {
   margin: 6px;
   border-radius: 2px;
 }
-
-@media (max-width: 999px) {
-  body {
-    overflow-x: hidden;
+@media (max-width: 786px) {
+  body,
+  html,
+  footer {
+    overflow-x: hidden !important;
   }
   .navList {
     position: absolute;
@@ -165,7 +193,8 @@ body {
   justify-items: center;
 }
 .homeSection {
-  padding: 100px;
+  padding-top: 100px;
+  display: flex;
 }
 .homeLink {
   display: flex;
@@ -185,15 +214,17 @@ body {
 .btn:hover {
   transform: scale(1.09);
 }
-.homeSection {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-  padding-top: 150px;
+
+.colunas {
+  display: flex;
 }
+.coluna1 {
+  /*background-color: #33bfd0;*/
+}
+.coluna2 {
+  /*background-color: rosybrown;*/
+}
+
 section {
   display: flex;
   align-items: center;
@@ -232,7 +263,6 @@ footer p {
   background-color: #fff;
   color: #33bfd0;
 }
-
 .socialbtn {
   cursor: pointer;
   display: flex;
