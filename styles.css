@@ -6,13 +6,17 @@
   font-family: "Comfortaa";
   font-weight: 700;
 }
-body,
+.mobileMenu body,
 html,
 footer {
   overflow-x: hidden !important;
 }
-h1 {
-  margin-top: 50px;
+h1,
+h2 {
+  margin-top: 30px;
+}
+h2 {
+  color: #33bfd0;
 }
 p {
   margin-top: 20px;
@@ -31,28 +35,7 @@ li {
 .meuNome {
   color: #33bfd0;
 }
-.LogoJP {
-  animation: Color 2s infinite;
-  font-size: 70px;
-  display: flex;
-}
-@keyframes Color {
-  0% {
-    color: #7bdafc;
-  }
-  25% {
-    color: #ffffff;
-  }
-  50% {
-    color: #33bfd0;
-  }
-  75% {
-    color: #33bfd0;
-  }
-  100% {
-    color: #33bfd0;
-  }
-}
+
 h1,
 h2,
 h3,
@@ -189,14 +172,24 @@ header {
 body {
   background-color: #12121b;
   overflow-x: hidden;
-  justify-content: center;
-  justify-items: center;
+
+  display: block;
 }
 .homeSection {
   padding-top: 100px;
   display: flex;
 }
+.Home {
+  position: center;
+  display: block;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
 .homeLink {
+  padding-top: 45px;
   display: flex;
 }
 .btn {
@@ -215,25 +208,16 @@ body {
   transform: scale(1.09);
 }
 
-.colunas {
+.experience {
   display: flex;
-}
-.coluna1 {
-  /*background-color: #33bfd0;*/
-}
-.coluna2 {
-  /*background-color: rosybrown;*/
 }
 
 section {
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   width: 70vw;
 }
-
 footer {
   padding-bottom: 0;
   height: 170px;
@@ -259,27 +243,35 @@ footer p {
   margin: 15px;
   height: 130px;
   width: 100px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #fff;
-  color: #33bfd0;
+  color: #1b1b1b;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .socialbtn {
   cursor: pointer;
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: center;
-  justify-items: center;
+
   background-color: #1b1b1b;
   border-radius: 15px;
   height: 40px;
-  width: 250px;
-  margin: 10px;
+  width: 200px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .socialbtn:hover {
   transform: scale(1.09);
 }
 .socialLogo {
   height: 25px;
-  margin-left: 30px;
+  padding-right: 0;
+  padding-left: 25px;
 }
